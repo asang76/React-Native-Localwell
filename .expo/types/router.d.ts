@@ -1,0 +1,14 @@
+/* eslint-disable */
+import * as Router from 'expo-router';
+
+export * from 'expo-router';
+
+declare module 'expo-router' {
+  export namespace ExpoRouter {
+    export interface __routes<T extends string | object = string> {
+      hrefInputParams: { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/modal`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `${'/(tabs)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `/Components/PriceRow`; params?: Router.UnknownInputParams; } | { pathname: `/Components/SavingsBanner`; params?: Router.UnknownInputParams; } | { pathname: `/Components/orderButtons`; params?: Router.UnknownInputParams; } | { pathname: `/Screen/OrderPlacedScreen`; params?: Router.UnknownInputParams; };
+      hrefOutputParams: { pathname: Router.RelativePathString, params?: Router.UnknownOutputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownOutputParams } | { pathname: `/modal`; params?: Router.UnknownOutputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownOutputParams; } | { pathname: `${'/(tabs)'}` | `/`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/PriceRow`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/SavingsBanner`; params?: Router.UnknownOutputParams; } | { pathname: `/Components/orderButtons`; params?: Router.UnknownOutputParams; } | { pathname: `/Screen/OrderPlacedScreen`; params?: Router.UnknownOutputParams; };
+      href: Router.RelativePathString | Router.ExternalPathString | `/modal${`?${string}` | `#${string}` | ''}` | `/_sitemap${`?${string}` | `#${string}` | ''}` | `${'/(tabs)'}${`?${string}` | `#${string}` | ''}` | `/${`?${string}` | `#${string}` | ''}` | `/Components/PriceRow${`?${string}` | `#${string}` | ''}` | `/Components/SavingsBanner${`?${string}` | `#${string}` | ''}` | `/Components/orderButtons${`?${string}` | `#${string}` | ''}` | `/Screen/OrderPlacedScreen${`?${string}` | `#${string}` | ''}` | { pathname: Router.RelativePathString, params?: Router.UnknownInputParams } | { pathname: Router.ExternalPathString, params?: Router.UnknownInputParams } | { pathname: `/modal`; params?: Router.UnknownInputParams; } | { pathname: `/_sitemap`; params?: Router.UnknownInputParams; } | { pathname: `${'/(tabs)'}` | `/`; params?: Router.UnknownInputParams; } | { pathname: `/Components/PriceRow`; params?: Router.UnknownInputParams; } | { pathname: `/Components/SavingsBanner`; params?: Router.UnknownInputParams; } | { pathname: `/Components/orderButtons`; params?: Router.UnknownInputParams; } | { pathname: `/Screen/OrderPlacedScreen`; params?: Router.UnknownInputParams; };
+    }
+  }
+}
